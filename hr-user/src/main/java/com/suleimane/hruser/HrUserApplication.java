@@ -9,7 +9,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class HrUserApplication implements CommandLineRunner{
+public class HrUserApplication implements CommandLineRunner {
 	
 	@Autowired
 	BCryptPasswordEncoder passwordEncoder;
@@ -20,7 +20,7 @@ public class HrUserApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Password = " + passwordEncoder.encode("123"));
+		//System.out.println("Password = " + passwordEncoder.encode("123"));
 	}
 
 }
